@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:property-placeholder location="classpath:META-INF/conf/*.properties" />
+	<context:property-placeholder location="classpath:conf/*.properties" />
 
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
 		p:driverClassName="${db.driver}"
@@ -17,7 +17,7 @@
 		p:password="${db.password}" />
 		
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
-		p:dataSource-ref="dataSource" p:mapperLocations="classpath:META-INF/mapper/*.xml" />
+		p:dataSource-ref="dataSource" p:mapperLocations="classpath:mapper/*.xml" />
 
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer"
 		p:sqlSessionFactoryBeanName="sqlSessionFactory" p:basePackage="com.sheefee.simple.sso.server.dao" />

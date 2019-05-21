@@ -4,7 +4,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.sheefee</groupId>
+		<groupId>com.tiger</groupId>
 		<artifactId>simple-sso</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -14,7 +14,7 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
-			<groupId>com.sheefee</groupId>
+			<groupId>com.tiger</groupId>
 			<artifactId>simple-sso-client</artifactId>
 			<version>${parent.version}</version>
 		</dependency>

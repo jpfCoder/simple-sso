@@ -10,17 +10,12 @@ import com.sheefee.simple.sso.client.constant.AuthConst;
 
 /**
  * 认证中心页面显示控制器
- * 
- * @author sheefee
- * @date 2017年9月12日 下午2:17:19
  *
  */
 @Controller
 public class IndexController {
 	/**
 	 * 登录页面
-	 * 
-	 * @author sheefee
 	 * @date 2017年9月12日 下午2:17:51
 	 * @param request
 	 * @param model
@@ -34,9 +29,6 @@ public class IndexController {
 
 	/**
 	 * 登录成功页面
-	 * 
-	 * @author sheefee
-	 * @date 2017年9月12日 下午2:18:02
 	 * @return
 	 */
 	@RequestMapping("/success")
